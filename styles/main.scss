@@ -1,8 +1,12 @@
 .nav, .header, .search, .wrap {
     width: 1300px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 10px 20px;
-    background-color: rgba(250, 235, 215, 0.241);
+}
+
+.nav_line {
+    width: 100%;
+    background-color: lightgray;
 }
 
 .nav {
@@ -23,8 +27,7 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 
 .logo {
@@ -33,6 +36,17 @@
     width: 210px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.cart {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    & span {
+        color: gray;
+    }
 }
 
 .search_line {
@@ -95,11 +109,17 @@
     width: 30%;
 }
 
-.menu_name {
+.menu_search {
     color: gray;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0px;
 }
 
-.menu_name, .menu_item {
+.menu_item {
     display: flex;
     align-items: center;
     padding: 5px 10px;

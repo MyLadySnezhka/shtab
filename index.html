@@ -10,18 +10,26 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav_links">
-            <a href="#">Авторазбор</a>
-            <a href="#">Выкуп авто</a>
-            <a href="#">Доставка и оплата</a>
-            <a href="#">Контакты</a>
-        </div>
-        <div><i class="fa-solid fa-user"></i> Войти | Регистрация</div>
-    </nav>
+    <div class="nav_line">
+        <nav class="nav">
+            <div class="nav_links">
+                <a href="#">Авторазбор</a>
+                <a href="#">Выкуп авто</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div><i class="fa-solid fa-user"></i> Войти | Регистрация</div>
+        </nav>
+    </div>    
     <header class="header">
         <a href="/"><div class="logo"></div></a>
-        <div class="">Корзина</div>
+        <div class="cart">
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
+            <div>
+                В корзине<br>
+                <span>1 товар на 450 грн.</span>
+            </div>
+        </div>
     </header>
     <div class="search_line">
         <div class="search">
@@ -34,8 +42,8 @@
         </div>
     </div>
     <div class="wrap">
-        <menu class="menu">
-            <div class="menu_name">Поиск категории</div>
+        <div class="menu">
+            <input type="text" name="menu_search" placeholder="Поиск категории" class="menu_search">
             <div class="menu_item"></div>
             <div class="menu_item">Инструмент</div>
             <div class="menu_item">Колесные диски, покрышки</div>
@@ -49,7 +57,7 @@
             <div class="menu_item">Подвеска передних колес</div>
             <div class="menu_item">Рулевое управдение</div>
             <div class="menu_item">Система выпуска отработанных газов</div>
-        </menu>
+        </div>
         <div class="content">
             <div class="content_menu">
                 <span>Главная - Каталог товаров -</span> Запчасти для Acura
